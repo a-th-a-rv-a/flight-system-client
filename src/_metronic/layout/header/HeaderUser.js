@@ -3,6 +3,8 @@ import Topbar from "./Topbar";
 import Brand from "../brand/Brand";
 import { shallowEqual, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import "./styles.css"; // Make sure to import your CSS
+
 const HeaderUser = () => {
   const { isAuthorized, user } = useSelector(
     ({ auth }) => ({
@@ -11,6 +13,7 @@ const HeaderUser = () => {
     }),
     shallowEqual
   );
+
   return (
     <div
       className="kt-header kt-grid__item"
@@ -22,30 +25,30 @@ const HeaderUser = () => {
           {isAuthorized && user.role === "1" && (
             <NavLink
               to="/my-trips"
-              activeClassName={"active"}
-              className="zzzzzzz ml-5"
+              activeClassName="active"
+              className="nav-link ml-5"
             >
               My Trips
             </NavLink>
           )}
           <NavLink
             to="/world-tour"
-            activeClassName={"active"}
-            className="zzzzzzz ml-2"
+            activeClassName="active"
+            className="nav-link ml-2"
           >
             World Tour
           </NavLink>
           <NavLink
             to="/umrah-deals"
-            activeClassName={"active"}
-            className="zzzzzzz ml-2"
+            activeClassName="active"
+            className="nav-link ml-2"
           >
             Umrah Deals
           </NavLink>
           <NavLink
             to="/blogs"
-            activeClassName={"active"}
-            className="zzzzzzz ml-2"
+            activeClassName="active"
+            className="nav-link ml-2"
           >
             Blogs
           </NavLink>

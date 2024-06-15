@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import UserProfile from "../../../app/partials/layout/UserProfile";
 import { shallowEqual, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import "./styles.css";
 
 const Topbar = () => {
   const { isAuthorized } = useSelector(

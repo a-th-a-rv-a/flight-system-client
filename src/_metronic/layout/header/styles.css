@@ -1,0 +1,35 @@
+/* styles.css */
+
+.nav-link {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.1s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #1abc9c; /* Change to your desired hover color */
+    color: white;
+    border-radius: 5%;
+  }
+  
+  .nav-link.active {
+    background-color: #1abc9c; /* Change to your desired hover color */
+    color: white; /* Change to your desired active color */
+    border-radius: 5%;
+  }
+  .kt-header-menu-wrapper{
+    background-color: black;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  
+  .ml-5 {
+    margin-left: 1.25rem;
+  }
+  .kt-header__topbar{
+    background-color: black;
+  }

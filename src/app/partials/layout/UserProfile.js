@@ -5,6 +5,7 @@ import { Dropdown } from "react-bootstrap";
 import { connect, useSelector } from "react-redux";
 import { toAbsoluteUrl } from "../../../_metronic";
 import HeaderDropdownToggle from "../content/CustomDropdowns/HeaderDropdownToggle";
+import "./styles.css"; 
 
 function UserProfile(props) {
   const { user } = useSelector(({ auth: { user } }) => ({
